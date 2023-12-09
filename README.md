@@ -12,4 +12,4 @@ Portfolio Construction, Portfolio Optimization, Investment Decision, Investment 
 
 <h3>How to run project</h3>
 Step# 1: cd portfolioconstructionproj
-Step# 2: python manage.py runserver
+<br>Step# 2: python manage.py runserver
