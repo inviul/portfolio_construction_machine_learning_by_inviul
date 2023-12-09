@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load static %}
+<br>
+<h1><center>Visualizing Portfolio 1</center></h1>
+<div class="text-center">
+<img src="{% static '/images/portfolio1_corr.jpg' %}" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+<div class="text-center">
+<a href="{% url 'portfolio:visual2' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Visualize Portfolio2</a>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}

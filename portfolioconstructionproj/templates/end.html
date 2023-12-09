@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load static %}
+<h1><center>Investment Recommendation Based on Machine Learning and Optimization Theory</center></h1>
+<br>
+<br>
+<div class="text-center">
+<h5>{{msg}}</h5>
+<h5>Max Expected Return: {{return}}</h5>
+<h5>Min Expected Risk: {{risk}}</h5>
+    <h5>Fund Allocated: {{allocation}}</h5>
+<h5>Fund Left: {{fundleft}}</h5>
+<div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

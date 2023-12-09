@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load static %}
+<h1><center>Build Datasets</center></h1>
+<br><br>
+<a href="{% url 'portfolio:download' filename='pricing.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Pricing Dataset</a>
+<a href="{% url 'portfolio:download' filename='fundamental.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Fundamental Dataset</a>
+<br><br>
+<h1><center>Optimization Theory Application</center></h1>
+<a href="{% url 'portfolio:download' filename='dailyreturn.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Daily Return Dataset</a>
+<a href="{% url 'portfolio:download' filename='varcovarmatrix.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Variance Covar Matrix</a>
+<a href="{% url 'portfolio:download' filename='assetparameters.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download AssetParameters4Clustering</a>
+<br><br>
+<h1><center>Portfolio Construction</center></h1>
+<a href="{% url 'portfolio:download' filename='portfoliocluster.txt' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Ticker Cluster</a>
+<a href="{% url 'portfolio:download' filename='portfolio_1.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Portfolio1 Raw Data</a>
+<a href="{% url 'portfolio:download' filename='portfolio_2.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Portfolio2 Raw Data</a>
+<a href="{% url 'portfolio:download' filename='portfolio_1_logreturn.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Portfolio1 Log Data</a>
+<a href="{% url 'portfolio:download' filename='portfolio_2_logreturn.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Portfolio2 Log Data</a>
+<br><br>
+<h1><center>Feature Engineering</center></h1>
+<a href="{% url 'portfolio:download' filename='portfolio1_final.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Portfolio1</a>
+<a href="{% url 'portfolio:download' filename='portfolio2_final.csv' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Portfolio2</a>
+<br>
+<br>
+<div class="text-center">
+<img src="{% static '/images/firstTrend.jpg' %}" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+<div class="text-center">
+<a href="{% url 'portfolio:visual1' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Visualize Portfolio1</a>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}

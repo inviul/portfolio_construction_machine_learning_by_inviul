@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load static %}
+<br>
+    <h3 align="center">Enter details to construct portfolios:</h3><br>
+<!--<div class="float-left" style="width: 200px; bottom: 100px">-->
+<!--        <img src="{% static 'bitslogo.png' %}" class="rounded float-right" alt="bitslogo">-->
+<!--</div>-->
+<div class="border-info container" align="center">
+         <form action="{% url 'portfolio:result' %}" class="form-inline">
+              {% csrf_token %}
+             <fieldset class="border border-info w-25 p-3" style="background-color: #eee;">
+              <h5>In which sector(s) do you want to invest?</h5>
+                  <input type="checkbox" id="CommunicationServices" name="CommunicationServices" value="False" >
+                  <label for="CommunicationServices">Communication Services</label><br>
+                  <input type="checkbox" id="ConsumerDefensive" name="ConsumerDefensive" value="False">
+                  <label for="ConsumerDefensive">Consumer Defensive</label><br>
+                  <input type="checkbox" id="ConsumerCyclical" name="ConsumerCyclical" value="False">
+                  <label for="ConsumerCyclical">Consumer Cyclical</label><br>
+                  <input type="checkbox" id="FinancialServices" name="FinancialServices" value="False">
+                  <label for="FinancialServices">Financial Services</label><br>
+                  <input type="checkbox" id="IndustrialGoods" name="IndustrialGoods" value="False">
+                  <label for="IndustrialGoods">Industrial Goods</label><br>
+                  <input type="checkbox" id="BasicMaterials" name="BasicMaterials" value="False">
+                  <label for="BasicMaterials">Basic Materials</label><br>
+                  <input type="checkbox" id="Technology" name="Technology" value="False">
+                  <label for="Technology">Technology</label><br>
+                  <input type="checkbox" id="Healthcare" name="Healthcare" value="False">
+                  <label for="Healthcare">Healthcare</label><br>
+                  <input type="checkbox" id="Industrials" name="Industrials" value="False">
+                  <label for="Industrials">Industrials</label><br>
+                  <input type="checkbox" id="RealEstate" name="RealEstate" value="False">
+                  <label for="RealEstate">RealEstate</label><br>
+                  <input type="checkbox" id="Utilities" name="Utilities" value="False">
+                  <label for="Utilities">Utilities</label><br>
+                  <input type="checkbox" id="Energy" name="Energy" value="False">
+                  <label for="Energy">Energy</label><br>
+                  <input type="checkbox" id="All" name="All" value="False">
+                  <label for="All">Confirm Selection</label><br>
+              <br>
+
+             <h5>What is your investment budget?</h5>
+              <input type="text" name="budget" placeholder="$10000" value="10000">
+             <br><br>
+              <input type="submit" value='Get Datasets'>
+
+             </fieldset>
+         </form>
+</div>
+<br>
+
+{% endblock %}

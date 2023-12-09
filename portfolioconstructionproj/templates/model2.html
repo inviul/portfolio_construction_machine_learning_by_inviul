@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load static %}
+{% get_static_prefix as STATIC_URL %}
+<h1><center>{{port}} Model Evaluation</center></h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+       <figure class="figure">
+            <img src="{{ STATIC_URL }}images/linear_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Linear Regression
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col">
+        <figure class="figure">
+            <img src="{{ STATIC_URL }}images/dt_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Decision Tree
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+  </div>
+    <div class="row">
+  <div class="col">
+       <figure class="figure">
+            <img src="{{ STATIC_URL }}images/elastic_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Elastic Net
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col">
+        <figure class="figure">
+            <img src="{{ STATIC_URL }}images/lasso_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Lasso Regression
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+  </div>
+
+      <div class="row">
+    <div class="col">
+       <figure class="figure">
+            <img src="{{ STATIC_URL }}images/randforest_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Random Forest
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col">
+        <figure class="figure">
+            <img src="{{ STATIC_URL }}images/ridge_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Ridge Regression
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+      </div>
+
+          <div class="row">
+    <div class="col">
+       <figure class="figure">
+            <img src="{{ STATIC_URL }}images/sgd_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Stochastic Gradient Descent
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col">
+        <figure class="figure">
+            <img src="{{ STATIC_URL }}images/svm_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Support Vector Machine
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+      </div>
+
+             <div class="row">
+    <div class="col">
+       <figure class="figure">
+            <img src="{{ STATIC_URL }}images/ann_2.jpg" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">
+              <div class="text-center">
+                Artificial Neural Network
+              </div>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col">
+        <br>
+        <figure class="figure">
+            <img src="{{ STATIC_URL }}images/df_2.jpg" class="img-fluid" alt="Responsive image">
+        </figure>
+    </div>
+      </div>
+</div>
+<br>
+<div class="text-center">
+<a href="{% url 'portfolio:end' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Get Portfolio Recommendation</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load static %}
+<br>
+<h1><center>Visualizing Portfolio 2</center></h1>
+<div class="text-center">
+<img src="{% static '/images/portfolio2_corr.jpg' %}" class="img-fluid" alt="Responsive image">
+</div>
+<br>
+<div class="text-center">
+<a href="{% url 'portfolio:model' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Model Evaluation - Portfolio 1</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
